@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.ProductoController">
+    <!-- Campo de búsqueda para eliminar productos por nombre -->
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="14.0" prefWidth="300.0" promptText="Buscar producto por nombre..."/>
+    
+    <!-- Botón para eliminar productos coincidentes con el texto de búsqueda -->
+    <Button fx:id="deleteButton" layoutX="320.0" layoutY="14.0" text="Eliminar Productos Coincidentes"/>
+
+    <!-- Botón para eliminar el producto seleccionado en la lista -->
+    <Button fx:id="deleteSelectedButton" layoutX="14.0" layoutY="60.0" text="Eliminar Producto Seleccionado"/>
+
+    <!-- Campo de texto para mostrar el nombre del producto seleccionado -->
+    <TextField fx:id="nameField" layoutX="14.0" layoutY="100.0" prefWidth="300.0" promptText="Nombre del producto seleccionado" editable="false"/>
+
+    <!-- ListView para mostrar la lista de productos -->
+    <ListView fx:id="productoListView" layoutX="14.0" layoutY="140.0" prefHeight="200.0" prefWidth="300.0"/>
+
+</AnchorPane>
